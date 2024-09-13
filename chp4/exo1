@@ -1,0 +1,19 @@
+ip = input("Entrez une adresse IP : ")
+octets = ip.split('.')
+
+if len(octets) != 4:
+    print("Adresse IP invalide")
+else:
+    valide = True
+    for octet in octets:
+        if not octet.isdigit():
+            valide = False
+            break
+        if not (0 <= int(octet) <= 255):
+            valide = False
+            break
+    
+    if valide:
+        print("Adresse IP valide")
+    else:
+        print("Adresse IP invalide")
