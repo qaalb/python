@@ -1,5 +1,8 @@
-ip = input("Entrez une adresse IP : ")
+# ip = input("Entrez une adresse IP : ")
+ip = "12.168x.333.2"
 octets = ip.split('.')
+
+# print(len(octets) )
 
 if len(octets) != 4:
     print("Adresse IP invalide")

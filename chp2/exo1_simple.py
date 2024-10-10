@@ -1,6 +1,10 @@
 try:
     moyenne = int(input("Saisir votre note : "))
 
+except :
+    print("veuillez entrer un nombre entier.")
+
+else:
     if moyenne < 0 or moyenne > 20:
         print("la note doit être comprise entre 0 et 20.")
     else:
@@ -15,5 +19,3 @@ try:
         else:
             print("Catastrophique")
 
-except ValueError:
-    print("veuillez entrer un nombre entier.")
